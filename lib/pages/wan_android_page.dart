@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:githubclientapp/constant/colors.dart';
 import 'package:githubclientapp/pages/home_list.dart';
 
+import 'discovery_page.dart';
 import 'myInfo_page.dart';
 
 class WanAndroidApp extends StatefulWidget{
@@ -19,7 +20,7 @@ class _WanAndroidAppState extends State<WanAndroidApp>{
 
   void initData(){
     _body = new IndexedStack(
-      children: <Widget>[new HomeListPage(), new MyInfoPage()],
+      children: <Widget>[new HomeListPage(), DiscoveryPage(), new MyInfoPage()],
       index: _tabIndex,
     );
   }
